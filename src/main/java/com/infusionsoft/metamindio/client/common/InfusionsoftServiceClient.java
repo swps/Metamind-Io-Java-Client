@@ -1,0 +1,24 @@
+package com.infusionsoft.metamindio.client.common;
+
+import com.infusionsoft.metamindio.client.common.authentication.FeignRequestAuthenticationStrategy;
+
+/**
+ * This is a class which is used to manage service endpoint resources.
+ */
+public interface InfusionsoftServiceClient {
+    public FeignRequestAuthenticationStrategy getFeignAuthenticationStrategy();
+
+    public ServiceLocation getServiceLocation();
+
+    /**
+     * This is largely used to determine the Hystrix ThreadPool to use.
+     */
+    public String getTargetServiceName();
+
+    /**
+     * This is used as a lifecycle method.  This will reset thread pools and other Hystrix
+     * resources for a clean shutdown.
+     */
+    public void reset();
+}
+
