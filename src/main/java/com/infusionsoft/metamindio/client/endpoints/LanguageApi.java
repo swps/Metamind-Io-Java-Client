@@ -20,11 +20,12 @@ public interface LanguageApi {
 
   interface Resources {
 
-    // error info - code: 200 reason: "OK" model: TextClassificationResponse
+    // error info - code: 200 reason: "" model: TextClassificationResponse
+    // error info - code: 201 reason: "Created" model: <none>
     // error info - code: 401 reason: "Unauthorized" model: <none>
     // error info - code: 403 reason: "Forbidden" model: <none>
     // error info - code: 404 reason: "Not Found" model: <none>
-    @RequestLine("GET /language/classify")
+    @RequestLine("POST /language/classify")
     public TextClassificationResponse classify (TextClassificationRequest body) ;
 
     }

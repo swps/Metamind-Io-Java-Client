@@ -4,18 +4,18 @@ public class Prediction {
   private Long classId = null;
   private String className = null;
   private Double prob = null;
-  public Long getClassId() {
+  public Long getClass_id() {
     return classId;
   }
-  public Prediction setClassId(Long classId) {
+  public Prediction setClass_id(Long classId) {
     this.classId = classId;
     return this;
   }
 
-  public String getClassName() {
+  public String getClass_name() {
     return className;
   }
-  public Prediction setClassName(String className) {
+  public Prediction setClass_name(String className) {
     this.className = className;
     return this;
   }
