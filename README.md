@@ -1,4 +1,4 @@
-A Simple Client for Metamind.io - An Infusionsoft Client SDK
+A Simple Client SDK for Metamind.io
 ================================
 
 Experience the [artifacts](https://scm.infusiontest.com/nexus/content/repositories/builds/com/infusionsoft/bdpingestor/).
