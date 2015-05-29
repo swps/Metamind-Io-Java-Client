@@ -20,9 +20,7 @@ public class ClassificationClientDriver {
     public static void main (String[] args) {
         final String serviceName = "ClassificationClientDriver";
         final URI metamindUri = URI.create("https://www.metamind.io");
-//        final URI metamindUri = URI.create("http://localhost:5005");
 
-//        final FeignRequestAuthenticationStrategy authStrategy = AuthenticationHeaderFeignRequestAuthenticationStrategy.usingAuthorizationToken()
         final BasicAuthCredentials credentials = new BasicAuthCredentials("wendel.schultz@gmail.com", "bonehead");
         final FeignRequestAuthenticationStrategy authStrategy = new BasicAuthFeignRequestAuthenticationStrategy(credentials);
 
